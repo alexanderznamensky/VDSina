@@ -1,0 +1,49 @@
+{
+  "title": "VDSina",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect VDSina",
+        "description": "Select .com for cp.vdsina.com or .ru for cp.vdsina.ru. Enter your permanent API token. The polling interval is in minutes.",
+        "data": {
+          "api_host": "API host",
+          "api_token": "API token",
+          "scan_interval": "Polling interval (minutes)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Update VDSina token",
+        "description": "Enter a new token for the same account.",
+        "data": {
+          "api_token": "New API token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "API token rejected. Check the token and API host.",
+      "cannot_connect": "Cannot retrieve API data. Check connectivity and account/server read permissions.",
+      "wrong_account": "This token belongs to another account. Add it separately."
+    },
+    "abort": {
+      "already_configured": "This VDSina account is already configured.",
+      "reauth_successful": "API token updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "VDSina options",
+        "description": "Interval: 5–1440 minutes. Leave the new token blank to keep the current token.",
+        "data": {
+          "scan_interval": "Polling interval (minutes)",
+          "api_token": "New API token (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "API token rejected.",
+      "cannot_connect": "Cannot connect to the API.",
+      "wrong_account": "This token belongs to another account."
+    }
+  }
+}

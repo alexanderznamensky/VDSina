@@ -1,0 +1,12 @@
+{
+  "domain": "vdsina",
+  "name": "VDSina",
+  "version": "1.0.3",
+  "documentation": "https://www.vdsina.com/tech/api",
+  "requirements": [],
+  "dependencies": [],
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "codeowners": []
+}
